@@ -95,7 +95,7 @@ Press `Ctrl+C` to stop the bot.
 
 1. Push this project to a GitHub repository.
 2. Create a new project on Railway and connect your repo.
-3. Railway reads `runtime.txt` and uses **Python 3.10**.
+3. Railway reads `runtime.txt` and uses **Python 3.13** (required for mise attestation verification on current build images).
 4. Railway detects the `Procfile` and runs: `worker: python main.py`
 5. In Railway **Variables**, add:
    - `TELEGRAM_BOT_TOKEN`
@@ -110,7 +110,7 @@ Press `Ctrl+C` to stop the bot.
 BosiWaPess/
 ├── main.py           # Bot logic
 ├── requirements.txt  # Python dependencies
-├── runtime.txt       # Python 3.10 for Railway
+├── runtime.txt       # Python 3.13 for Railway
 ├── Procfile          # Railway worker command
 ├── .env.example      # Template for local .env
 ├── .gitignore
